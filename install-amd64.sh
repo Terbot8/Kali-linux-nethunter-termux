@@ -18,7 +18,7 @@ cd installed-rootfs
 printf "${blue} download rootfs${reset}\n "
 wget https://kali.download/nethunter-images/current/rootfs/kalifs-amd64-minimal.tar.xz
 printf "${blue} extract rootfs${reset}\n"
-proot --link2symlink tar -xf kalifs-arm64-minimal.tar.xz 2> /dev/null || :
+proot --link2symlink tar -xf kalifs-amd64-minimal.tar.xz 2> /dev/null || :
 
 cp -r kali-amd64 debian
 rm -rf kali-amd64
