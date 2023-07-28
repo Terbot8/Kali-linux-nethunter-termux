@@ -5,7 +5,7 @@ yellow='\033[1;33m'
 blue='\033[1;34m'
 light_cyan='\033[1;96m'
 reset='\033[0m'
-
+cd
 printf "${blue} install  nethunter"${reset}\n
 apt update
 apt upgrade
@@ -29,8 +29,15 @@ echo '' proot-distro login debian '' >> $PREFIX/bin/nh-r
 chmod +x  $PREFIX/bin/nh
 chmod +x  $PREFIX/bin/nh-r
 cd
-cd 
+cd Kali-linux-nethunter-termux-main 
+cp desktop.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
+printf "${blue} no install desktop bash desktop.sh
+nh-r
+
+
+
 clear
 printf "${blue} [+] nh = nethunter start${reset}\n "
 printf "${blue} [+] nh-r =nethunter start as root${reset}\n "
+
 
