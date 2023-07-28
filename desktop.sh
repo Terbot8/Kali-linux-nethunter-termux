@@ -1,8 +1,8 @@
-sudo apt remove sudo
+apt remove sudo
 rm -rf /etc/resolv.conf
 echo '' nameserver 8.8.8.8 '' >> /etc/resolv.conf
-sudo apt update
-sudo apt install sudo udisks2 
+apt update
+apt install sudo udisks2 
 sudo rm /var/lib/dpkg/info/udisks2.postinst
 echo '''' >> /var/lib/dpkg/info/udisks2.postinst
 sudo dpkg --configure -a
