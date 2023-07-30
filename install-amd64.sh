@@ -29,7 +29,7 @@ echo '' proot-distro login debian '' >> $PREFIX/bin/nh-r
 chmod +x  $PREFIX/bin/nh
 chmod +x  $PREFIX/bin/nh-r
 cd
-cd Kali-linux-nethunter-termux-main 
+cd Kali-linux-nethunter-termux
 cp desktop.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
 printf "${blue} no install desktop bash desktop.sh "
 nh-r
