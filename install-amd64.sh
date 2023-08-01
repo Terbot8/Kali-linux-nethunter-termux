@@ -26,8 +26,12 @@ rm -rf kali-amd64
 
 echo '' proot-distro login --user kali debian --shared-tmp '' >> $PREFIX/bin/nh
 echo '' proot-distro login debian '' >> $PREFIX/bin/nh-r
+echo '' proot-distro login --user Kali debian '' >> $PREFIX/bin/nethunter
+echo '' proot-distro login debian '' >> $PREFIX/bin/nethunter-r
 chmod +x  $PREFIX/bin/nh
 chmod +x  $PREFIX/bin/nh-r
+chmod +x $PREFIX/bin/nethunter-r
+chmod +x $PREFIX/bin/nethunter
 cd
 cd Kali-linux-nethunter-termux
 cp desktop.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
@@ -55,6 +59,8 @@ printf "${blue}##################################################\n"
 ##################################
 ##              Main            ##
 
-printf "${blue} [+] nh = nethunter start${reset}\n "
-printf "${blue} [+] nh-r =nethunter start as root${reset}\n "
+printf "${blue} [+] nethunter = nethunter start${reset}\n "
+printf "${blue} [+] nethunter =nethunter start as root${reset}\n "
+printf "${blue} [+] nh = start nethunter as root shortcut${reset}\n "
+printf "${blue} [+] nh-r = start nethunter as root shortcut${reset}\n "
 
