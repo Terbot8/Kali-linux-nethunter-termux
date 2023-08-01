@@ -26,8 +26,12 @@ rm -rf kali-arm64
 
 echo '' proot-distro login --user kali debian --shared-tmp '' >> $PREFIX/bin/nh
 echo '' proot-distro login debian '' >> $PREFIX/bin/nh-r
+echo '' proot-distro login --user Kali debian '' >> $PREFIX/bin/nethunter
+echo '' proot-distro login debian '' >> $PREFIX/bin/nethunter-r
 chmod +x  $PREFIX/bin/nh
 chmod +x  $PREFIX/bin/nh-r
+chmod +x $PREFIX/bin/nethunter
+chmod +x $PREFIX/bin/nethunter-r
 cd
 cd Kali-linux-nethunter-termux
 cp desktop.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
@@ -37,7 +41,27 @@ nh-r
 
 
 clear
-printf "${blue} [+] nh = nethunter start${reset}\n "
-printf "${blue} [+] nh-r =nethunter start as root${reset}\n "
+printf "${blue}##################################################\n"
+    printf "${blue}##                                              ##\n"
+    printf "${blue}##  88      a8P         db        88        88  ##\n"
+    printf "${blue}##  88    .88'         d88b       88        88  ##\n"
+    printf "${blue}##  88   88'          d8''8b      88        88  ##\n"
+    printf "${blue}##  88 d88           d8'  '8b     88        88  ##\n"
+    printf "${blue}##  8888'88.        d8YaaaaY8b    88        88  ##\n"
+    printf "${blue}##  88P   Y8b      d8''''''''8b   88        88  ##\n"
+    printf "${blue}##  88     '88.   d8'        '8b  88        88  ##\n"
+    printf "${blue}##  88       Y8b d8'          '8b 888888888 88  ##\n"
+    printf "${blue}##                                              ##\n"
+    printf "${blue}####  ############# NetHunter ####################${reset}\n\n"
+}
+
+
+##################################
+##              Main            ##
+
+printf "${blue} [+] nethunter = nethunter start${reset}\n "
+printf "${blue} [+] nethunter =nethunter start as root${reset}\n "
+printf "${blue} [+] nh = start Kali Linux shortcut${reset}\n "
+print "${blue} [+] nh-r = start Kali Linux as root shortcut${reset}\n "
 
 
