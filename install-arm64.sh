@@ -62,6 +62,6 @@ printf "${blue}##################################################\n"
 printf "${blue} [+] nethunter = nethunter start${reset}\n "
 printf "${blue} [+] nethunter =nethunter start as root${reset}\n "
 printf "${blue} [+] nh = start Kali Linux shortcut${reset}\n "
-print "${blue} [+] nh-r = start Kali Linux as root shortcut${reset}\n "
+printf "${blue} [+] nh-r = start Kali Linux as root shortcut${reset}\n "
 
 
