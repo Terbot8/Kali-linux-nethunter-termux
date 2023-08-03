@@ -50,10 +50,9 @@ Add some colours
  chmod +x  $PREFIX/bin/nh-r 
  chmod +x $PREFIX/bin/nethunter 
  chmod +x $PREFIX/bin/nethunter-r 
- cd 
- cd Kali-linux-nethunter-termux 
- 
- cp desktop.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
+ cd $PREFIX/var/lib/proot-distro/installed-rootfs/
+ cd debian/root
+ wget https://raw.githubusercontent.com/Terbot8/Kali-linux-nethunter-termux/main/desktop.sh
  clear 
  printf "${blue} no install desktop bash desktop.sh${reset}\n"
  nh-r 
