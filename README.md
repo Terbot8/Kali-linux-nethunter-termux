@@ -11,4 +11,12 @@ bash install-armhf.sh
 ### install for amd64
 wget https://raw.githubusercontent.com/Terbot8/Kali-linux-nethunter-termux/main/install-amd64.sh
 bash install-amd64.sh
+#what is arm64 armhf amd64 i386
+aarch64 is arm64
+arm is armhf
+86x is amd64
+32bit is i386
+
+
+
 
