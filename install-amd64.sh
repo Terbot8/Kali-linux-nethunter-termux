@@ -35,6 +35,7 @@ chmod +x $PREFIX/bin/nethunter
 cd
 cd Kali-linux-nethunter-termux
 cp desktop.sh $PREFIX/var/lib/proot-distro/installed-rootfs/debian/root
+clear
 printf "${blue} no install desktop bash desktop.sh "
 nh-r
 
