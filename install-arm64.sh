@@ -36,6 +36,7 @@ cd
 cd Kali-linux-nethunter-termux
 CHROOT=$PREFIX/var/lib/proot-distro/installed-rootfs/debian
 cp desktop.sh $CHROOT/root
+clear
 printf "${blue} no install desktop bash desktop.sh "
 nh-r
 
