@@ -12,7 +12,7 @@ rm /var/lib/dpkg/info/udisks2.postinst
 echo '''' >> /var/lib/dpkg/info/udisks2.postinst
 dpkg --configure -a
 apt-mark hold udisks2 
-
+## sudo and su fix start
 chmod +s /bin/sudo
 chmod +s /bin/su
 sudo apt install kali-desktop-xfce dbus-x11 tigervnc-standalone-server -y
