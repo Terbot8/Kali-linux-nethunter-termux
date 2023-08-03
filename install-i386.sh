@@ -40,7 +40,7 @@
   
  cp -r kali-i386 debian 
  
- rm -rf kali-386
+ rm -rf kali-i386
   
   
  echo '' proot-distro login --user kali debian --shared-tmp '' >> $PREFIX/bin/nh 
