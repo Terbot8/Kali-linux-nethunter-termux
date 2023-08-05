@@ -15,6 +15,7 @@ apt-mark hold udisks2
 ## sudo and su fix start
 chmod +s /bin/sudo
 chmod +s /bin/su
-sudo apt install kali-desktop-xfce dbus-x11 tigervnc-standalone-server -y
+sudo apt install xfce4 xfce4-whiskermeun-plugin -y
+sudo apt install kali-themes dbus-x11 firefox-esr qterminal -y
 clear
 exit
