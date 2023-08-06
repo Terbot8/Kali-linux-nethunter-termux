@@ -39,7 +39,7 @@ proot --link2symlink tar -xf kalifs-arm64-nano.tar.xz 2> /dev/null || :
 cp -r kali-arm64 debian
 rm -rf kali-arm64
 cd kali-arm64/root
-wget
+wget https://raw.githubusercontent.com/Terbot8/Kali-linux-nethunter-termux/main/Desktop.sh
 clear
 printf "${red} bash desktop.sh and enter${reset}\n"
 echo " proot-distro login --user Kali debian " >> $PREFIX/bin/nh
